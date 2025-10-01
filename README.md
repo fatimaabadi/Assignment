@@ -43,7 +43,7 @@ Clone the repository:
 git clone https://github.com/fatimaabadi/Assignment.git
 
 
-cd todo-app
+cd  Assignment/todo-app
 
 
 Install dependencies:
