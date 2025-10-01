@@ -51,6 +51,10 @@ Install dependencies:
 npm install
 
 
+
+
+
+
 Start the development server:
 
 npm run dev
@@ -59,3 +63,17 @@ npm run dev
 Run tests:
 
 npm test
+
+
+
+
+
+
+
+
+
+
+
+
+<img width="1917" height="755" alt="image" src="https://github.com/user-attachments/assets/559816bd-9a4a-42d6-b92f-cb3a9d65d5a1" />
+
