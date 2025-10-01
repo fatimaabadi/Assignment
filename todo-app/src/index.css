@@ -1,0 +1,142 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.alert-pink {
+  background-color: #ffb6c1; /* soft pink */
+  color: #000;               /* black text for contrast */
+  border: 1px solid #ff99aa; /* optional border */
+}
+
+
+/* -------------------------------
+   New Task Fade + Scale + Background
+---------------------------------*/
+.new-task-highlight {
+  animation: fadeScalePink 0.8s ease forwards;
+}
+
+@keyframes fadeScalePink {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+    background-color: #ffb6c1;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+    background-color: #ffc0cb;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    background-color: #ffb6c1;
+  }
+}
+
+/* -------------------------------
+   Fade + slide animation for tasks
+---------------------------------*/
+.todo-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.todo-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 300ms ease-in;
+}
+.todo-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.todo-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 300ms ease-in;
+}
+
+/* -------------------------------
+   Fade-out + Bounce for deleted tasks
+---------------------------------*/
+.fade-out {
+  animation: fadeOutBounce 0.5s ease forwards;
+}
+
+@keyframes fadeOutBounce {
+  0% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  30% {
+    transform: translateX(20px) scale(1.1);
+  }
+  60% {
+    transform: translateX(-10px) scale(0.95);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50px) scale(0.9);
+  }
+}
+
+/* -------------------------------
+   Checkbox toggle animation
+---------------------------------*/
+.checkbox-highlight {
+  animation: pulsePink 0.5s ease forwards;
+}
+
+@keyframes pulsePink {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 182, 193, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 10px 4px rgba(255, 182, 193, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 182, 193, 0);
+  }
+}
+
+/* -------------------------------
+   Badge style for pink due date
+---------------------------------*/
+.badge.bg-pink {
+  background-color: #ffb6c1;
+  color: #000;
+}
